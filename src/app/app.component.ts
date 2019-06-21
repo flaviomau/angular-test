@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import {NgbDateStruct, NgbCalendar, NgbDatepicker} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -6,20 +7,28 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  public cards: Array<any> = [
-    {text: 'Card 1'},
-    {text: 'Card 2'},
-    {text: 'Card 3'},
-    {text: 'Card 4'},
-    {text: 'Card 5'},
-    {text: 'Card 6'},
-    {text: 'Card 7'},
-    {text: 'Card 8'},
-    {text: 'Card 9'},
-    {text: 'Card 10'},
-  ];
+  public cards: Array<any> = [];
+  public model: NgbDateStruct;
+  
+  @ViewChild('dp', {static: false}) datepicker: NgbDatepicker;
+
+  constructor(private calendar: NgbCalendar) {
+  }
 
   addCard(cardText: string) {
     this.cards.push({text: cardText});
   }
+
+  selectDate(year, month, day) {
+    this.model = { year, month, day }
+    this.datepicker.navigateTo(this.model);
+  }
+
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.model = this.calendar.getToday();
+      this.datepicker.navigateTo(this.model);
+    });    
+ }
+
 }
