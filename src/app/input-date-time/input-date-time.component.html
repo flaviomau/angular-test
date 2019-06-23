@@ -1,0 +1,7 @@
+<ng-template #popContent>
+  <div>
+      <app-input-date [modelDate]="modelDate" (onDateChange)="getDateChanged($event)"></app-input-date>
+      <app-input-time [modelTime]="modelTime" (onTimeChange)="getTimeChanged($event)"></app-input-time>
+  </div>    
+</ng-template>
+<input [ngbPopover]="popContent" [autoClose]="'outside'"/>

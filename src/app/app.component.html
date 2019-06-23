@@ -10,17 +10,10 @@
       </div>
     </div>
     <app-card-list [cards]="cards"></app-card-list>
-    <ngb-datepicker #dp [(ngModel)]="model"></ngb-datepicker>
-
-    <hr />
-
-    <button class="btn btn-sm btn-outline-primary mr-2" (click)="selectDate(1980,9,15)">Select 15/09/1980</button>
-    <button class="btn btn-sm btn-outline-primary mr-2" (click)="selectDate(2015,10,18)">Select 18/10/2015</button>
-    <button class="btn btn-sm btn-outline-primary mr-2" (click)="selectDate(2003,4,11)">Select 11/04/20032013</button>
-
-    <hr />
-
-    <pre>Model: {{ model | json }}</pre>
-
+    <div class="container-fluid text-center pb-5">
+        <div class="row justify-content-center">
+          <app-input-date-time></app-input-date-time>
+        </div>
+    </div>    
   </div>
 </div>

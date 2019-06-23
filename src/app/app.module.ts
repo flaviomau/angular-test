@@ -8,13 +8,19 @@ import { CardListComponent } from './card-list/card-list.component';
 import { NewCardInputComponent } from './new-card-input/new-card-input.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InputDateTimeComponent } from './input-date-time/input-date-time.component';
+import { InputTimeComponent } from './input-date-time/input-time/input-time.component';
+import { InputDateComponent } from './input-date-time/input-date/input-date.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CardComponent,
     CardListComponent,
-    NewCardInputComponent
+    NewCardInputComponent,
+    InputDateTimeComponent,
+    InputTimeComponent,
+    InputDateComponent,
   ],
   imports: [
     BrowserModule,
