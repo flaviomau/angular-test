@@ -293,6 +293,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@ng-bootstrap/ng-bootstrap@^4.2.1":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@ng-bootstrap/ng-bootstrap/-/ng-bootstrap-4.2.2.tgz#a1c3a9576656cb4f793bbc3df56dfbdeb098f2fb"
+  integrity sha512-v8QmC17bv9he5Ep6zutaI9aQ2w/2NqySP0fejOKe7cacKpGUqsLIakpyd2FD7mfZu7pSCCtHYpRWR+h6yq+Ngg==
+  dependencies:
+    tslib "^1.9.0"
+
 "@ngtools/webpack@8.0.1":
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-8.0.1.tgz#892ca23277e2602447fc093380dae585782d1557"
@@ -1085,6 +1092,11 @@ bonjour@^3.5.0:
     multicast-dns "^6.0.1"
     multicast-dns-service-types "^1.1.0"
 
+bootstrap-css-only@^4.3.1:
+  version "4.4.1"
+  resolved "https://registry.yarnpkg.com/bootstrap-css-only/-/bootstrap-css-only-4.4.1.tgz#08012477b1baab52fa1ca304eaba2e40f6ef0d2e"
+  integrity sha512-iBgNli7RnedBFwn6sMTQoAZ8WgIwmX4kF1rckfj+pgro5q/Q0DbLtcpfH60XoFnCXzbEJU/khC/B2EQap89mCg==
+
 bootstrap@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.3.1.tgz#280ca8f610504d99d7b6b4bfc4b68cec601704ac"
@@ -1875,9 +1887,9 @@ decamelize@^1.2.0:
   integrity sha1-9lNNFRSCabIDUue+4m9QH5oZEpA=
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.0.1"
